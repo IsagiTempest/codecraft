@@ -15,6 +15,8 @@
     --font32: 32px;
     --font24: 24px;
 
+    --brad: 30px;
+
     /* Effects */
     --box-shadow: 7px 8px 25px -15px rgba(130,72,250,0.4);
     --box-shadow-button: 7px 8px 25px 0 rgba(130,72,250,0.5);
@@ -25,6 +27,10 @@ body{
     margin: 0;
     padding: 0;
     background-color:var(--bg-color-1);
+    font-size: 16px;
+}
+html{
+    font-size: 12px;
 }
 .navbar{
     max-width: 1200px;
@@ -114,7 +120,7 @@ body{
     padding: 25px 80px;
     border-radius:50px;
     text-decoration: none;
-    font-size: 24px;
+    font-size: var(--font24);
     box-shadow: var(--box-shadow-button);
     display: inline-block;
     border:none;
@@ -499,7 +505,7 @@ label[for="checkbox"]{
 .expert-card{
     background-color: var(--bg-color-2);
     box-shadow: var(--box-shadow);
-    border-radius: 30px;
+    border-radius: var(--brad);
     overflow: hidden;
     text-align: center;
 }
@@ -567,7 +573,7 @@ label[for="checkbox"]{
     justify-content: flex-start;
     gap: 20px;
     padding: 30px;
-    border-radius: 30px;
+    border-radius: var(--brad);
     background-color: var(--bg-color-2);
     box-shadow: var(--box-shadow);
     font-size: var(--font22);
@@ -582,7 +588,7 @@ label[for="checkbox"]{
 }
 .faq-number{
     color: var(--color-2);
-    font-size: 36px;
+    font-size: var(--font36);
     font-weight: bold;
 }
 .faq-question-text{
@@ -634,7 +640,7 @@ label[for="checkbox"]{
     gap: 30px;
 }
 .feedback-video{
-    border-radius: 30px;
+    border-radius: var(--brad);
     border:10px solid #fff;
     overflow: hidden;
     box-shadow: var(--box-shadow);
@@ -720,7 +726,7 @@ label[for="checkbox"]{
 .buycourse-right{
     background-color:var(--bg-color-2);
     padding: 50px;
-    border-radius: 30px;
+    border-radius: var(--brad);
     flex-basis: 600px;
     box-shadow: var(--box-shadow);
 }
@@ -740,7 +746,7 @@ label[for="checkbox"]{
 }
 .carusel-card{
     background-color: var(--bg-color-2);
-    border-radius: 30px;
+    border-radius: var(--brad);
     padding: 0 39px;
     display: flex;
     align-items: center;
@@ -849,7 +855,19 @@ footer a{
     }
 }
 @media (max-width:768px){
-    .nav-phone{
+    :root{
+        --font60: 36px;
+        --font48: 30px;
+        --font36: 24px;
+        --font22: 18px;
+        --font16: 16px;
+        --font18: 16px;
+        --font32: 20px;
+        --font24: 20px;
+
+        --brad:20px;
+    }
+    .nav-phone, .faq-number{
         display: none;
     }
     .hero-icons, .course-programm-item{
@@ -890,5 +908,24 @@ footer a{
         height: 100%;
         object-fit: cover;
         object-position: center;
+    }
+    .c-block-item{
+        padding:0 0 0 25px  ;
+    }
+    .container{
+        margin-top: 100px;
+    }
+    .faq-question {
+        padding: 15px 30px 15px 15px;
+    }
+    .qanday-ishlaymiz-number{
+        line-height: 3.333;
+    }
+    .navbar, .hero-container, .container{
+        margin-left:15px;
+        margin-right:15px;
+    }
+    .hero-container{
+        margin-top: 50px;
     }
 }
