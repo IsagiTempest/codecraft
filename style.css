@@ -580,7 +580,7 @@ label[for="checkbox"]{
     font-weight: bold;
     line-height: 1.5;
     cursor: pointer;
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
     margin-top: 10px;
 }
 .faq-question:hover{
@@ -602,7 +602,7 @@ label[for="checkbox"]{
     right: 20px;
     color: var(--color-1);
     transform: rotate(0deg);
-    transition:all 0.3 ease ;
+    transition: all 0.3s ease;
 }
 .faq-answer{
     max-height: 0;
@@ -611,7 +611,14 @@ label[for="checkbox"]{
     color: var(--color-1);
     font-size: var(--font22);
     line-height: 1.5;
-    transition:all 0.3 ease ;
+    transition:all 0.3s ease ;
+}
+.faq-card.active .faq-answer{
+    max-height: 300px;
+    padding: 15px;
+}
+.faq-card.active .faq-anchor{
+    transform: rotate(180deg);
 }
 .faq-photo{
     border: 10px solid #fff; 
